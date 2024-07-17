@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Employee_Management.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Employee_Management.Data
 {
@@ -8,6 +9,7 @@ namespace Employee_Management.Data
         {
             
         }
+        public DbSet<Department> Departments { get; set; }
 
     }
 }
